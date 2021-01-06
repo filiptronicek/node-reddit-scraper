@@ -44,7 +44,7 @@ module.exports = {
   },
   subreddits: [
     {
-      storeByUser: true,
+      storeByUser: false,
       name: 'dankmemes',
       imgStore: 'data/dankmemes',
       sortBy: 'best',
