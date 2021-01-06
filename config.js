@@ -46,7 +46,6 @@ module.exports = {
     {
       storeByUser: false,
       name: 'dankmemes',
-      imgStore: 'data/dankmemes',
       sortBy: 'best',
       paging: true,
       nsfw: true,

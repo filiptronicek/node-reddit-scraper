@@ -9,7 +9,6 @@ describe('Reddit Lib', function () {
       var subreddit = {
         storeByUser: true,
         name: 'pics',
-        imgStore: 'data/pics',
         sortBy: 'new',
         paging: true,
         nsfw: true,
@@ -27,7 +26,6 @@ describe('Reddit Lib', function () {
       var subreddit = {
         storeByUser: true,
         name: 'pics',
-        imgStore: 'data/pics',
         sortBy: 'new',
         paging: true,
         nsfw: true,
