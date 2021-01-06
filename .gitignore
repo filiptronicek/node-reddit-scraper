@@ -4,3 +4,4 @@ data
 .c9
 config.js
 pages.json
+.env
