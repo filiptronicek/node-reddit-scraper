@@ -41,8 +41,8 @@ var sr = subreddits.map(function (subreddit) {
   return subreddit.name;
 });
 
-Log.info('  Subreddits: ' + sr);
-Log.info('  Services: ' + services.join(', '));
+Log.info(`  Subreddits: ${sr}`);
+Log.info(`  Services: ${services.join(', ')}`);
 console.log('-----------------------------------------------');
 async.each(subreddits, function (subreddit, subCallback) {
   Log.info('Started Processing /r/' + subreddit.name);
@@ -69,7 +69,7 @@ async.each(subreddits, function (subreddit, subCallback) {
         });
       }, function (err) {
         if (err) {
-          Log.error('Error processing ' + subreddit.name + ': ' + err);
+          Log.error(`Error processing ${subreddit.name}: ${err}`);
         }
         Images = _.flatten(Images);
         async.each(Images, function (image, cb) {
@@ -88,9 +88,9 @@ async.each(subreddits, function (subreddit, subCallback) {
             Log.warn(err);
           }
 
-          Log.info('Finished with /r/' + subreddit.name);
-          Log.info('  Downloaded ' + imagesDownloaded, 'images.');
-          Log.info('  ' + existingImagesCount, 'images already existing.');
+          Log.info(`Finished with /r/${subreddit.name}`);
+          Log.info(`  Downloaded ${imagesDownloaded}`, 'images.');
+          Log.info(`  ${existingImagesCount}`, 'images already existing.');
           stats.totalImagesDownloaded += imagesDownloaded;
           stats.totalImagesExisting += existingImagesCount;
           subCallback(err);
