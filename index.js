@@ -45,7 +45,7 @@ Log.info(`  Subreddits: ${sr}`);
 Log.info(`  Services: ${services.join(', ')}`);
 console.log('-----------------------------------------------');
 async.each(subreddits, function (subreddit, subCallback) {
-  Log.info('Started Processing /r/' + subreddit.name);
+  Log.info(`Started Processing /r/${subreddit.name}`);
 
   function scraperCallback(err, pages) {
 
@@ -59,9 +59,9 @@ async.each(subreddits, function (subreddit, subCallback) {
       var imagesDownloaded = 0;
       var existingImagesCount = 0;
       stats.totalSubredditsScraped++;
-      async.forEachOf(pages, function (page, index, callback) {
+      async.forEachOf(pages, function (page, _index, callback) {
         // scrape the subreddit page
-        Scraper.scrape(subreddit, page, { domains: domains }, function (err, images) {
+        Scraper.scrape(subreddit, page, { domains: domains }, function (_err, images) {
           images = _.flatten(images);
           Images.push( images );
           stats.totalPagesScraped++;
