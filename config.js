@@ -51,6 +51,78 @@ module.exports = {
       nsfw: true,
       pages: 5, // grab x pages if paging: true
       limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'memes',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'okbuddyretard',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'okbrudimongo',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'okmatewanker',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'starterpacks',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'Memes_Of_The_Dank',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: 'historymemes',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
+    },
+    {
+      storeByUser: false,
+      name: '4panelcringe',
+      sortBy: 'best',
+      paging: true,
+      nsfw: true,
+      pages: 5, // grab x pages if paging: true
+      limit: 100 //default is 25, max is 100 per reddit api
     }
   ]
 };
