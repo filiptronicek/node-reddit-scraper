@@ -16,4 +16,3 @@ RUN npm install
 COPY . .
 
 CMD [ "node", "index.js" ]
-RUN rclone copy imgs/ school:

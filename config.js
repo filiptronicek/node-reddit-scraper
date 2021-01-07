@@ -1,12 +1,12 @@
 const pkg = require('./package.json');
-require('dotenv').config()
+require('dotenv').config();
 
 module.exports = {
   concurrents: 10,
   reddit: {
     rateLimit: 3500,
     url: 'https://ssl.reddit.com',
-    userAgent: 'scraperBot/' + pkg.version + ' by ndboost'
+    userAgent: `scraperBot/${pkg.version} by ndboost`
   },
   gfycat: {
     enabled: true,
